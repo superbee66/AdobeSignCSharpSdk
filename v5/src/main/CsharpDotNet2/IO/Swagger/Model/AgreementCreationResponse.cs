@@ -1,11 +1,9 @@
 using System;
-using System.Text;
-using System.Collections;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.Text;
 using Newtonsoft.Json;
 
-namespace IO.Swagger.Model {
+namespace AdobeSignClient.V5.Model {
 
   /// <summary>
   /// A JSON  that contains both the id of the newly created agreement and URL / embedded code to direct the user to tne next step in the creation process.

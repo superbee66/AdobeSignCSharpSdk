@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
+using AdobeSignClient.V3.Client;
+using AdobeSignClient.V3.Model;
 using RestSharp;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
 
-namespace IO.Swagger.Api
+namespace AdobeSignClient.V3.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints

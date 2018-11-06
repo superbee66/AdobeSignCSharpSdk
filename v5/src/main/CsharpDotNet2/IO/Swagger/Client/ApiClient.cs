@@ -1,17 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Text.RegularExpressions;
 using System.IO;
-using System.Web;
-using System.Linq;
-using System.Net;
-using System.Text;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Extensions;
 
-namespace IO.Swagger.Client
+namespace AdobeSignClient.V5.Client
 {
     /// <summary>
     /// API client is mainly responible for making the HTTP call to the API backend.

@@ -1,6 +1,6 @@
 using System;
 
-namespace IO.Swagger.Client {
+namespace AdobeSignClient.V2.Client {
   /// <summary>
   /// API Exception
   /// </summary>

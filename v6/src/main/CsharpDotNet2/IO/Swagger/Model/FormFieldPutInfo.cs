@@ -1,11 +1,9 @@
-using System;
-using System.Text;
-using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.Text;
 using Newtonsoft.Json;
 
-namespace IO.Swagger.Model {
+namespace AdobeSignClient.V6.Model {
 
   /// <summary>
   /// Information required to add or replace agreement form fields
