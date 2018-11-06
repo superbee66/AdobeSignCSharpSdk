@@ -2,41 +2,40 @@ using System.Runtime.Serialization;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace AdobeSignClient.V6.Model {
-
-  /// <summary>
-  /// Information required to add or update agreement form fields
-  /// </summary>
-  [DataContract]
-  public class FormFieldPostInfo {
+namespace AdobeSignClient.V6.Model
+{
     /// <summary>
-    /// The ID of the template from which to add new fields
+    ///     Information required to add or update agreement form fields
     /// </summary>
-    /// <value>The ID of the template from which to add new fields</value>
-    [DataMember(Name="templateId", EmitDefaultValue=false)]
-    [JsonProperty(PropertyName = "templateId")]
-    public string TemplateId { get; set; }
+    [DataContract]
+    public class FormFieldPostInfo
+    {
+        /// <summary>
+        ///     The ID of the template from which to add new fields
+        /// </summary>
+        /// <value>The ID of the template from which to add new fields</value>
+        [DataMember(Name = "templateId", EmitDefaultValue = false)]
+        [JsonProperty(PropertyName = "templateId")]
+        public string TemplateId { get; set; }
+
+        /// <summary>
+        ///     Get the JSON string presentation of the object
+        /// </summary>
+        /// <returns>JSON string presentation of the object</returns>
+        public string ToJson() => JsonConvert.SerializeObject(this, Formatting.Indented);
 
 
-    /// <summary>
-    /// Get the string presentation of the object
-    /// </summary>
-    /// <returns>String presentation of the object</returns>
-    public override string ToString()  {
-      var sb = new StringBuilder();
-      sb.Append("class FormFieldPostInfo {\n");
-      sb.Append("  TemplateId: ").Append(TemplateId).Append("\n");
-      sb.Append("}\n");
-      return sb.ToString();
+        /// <summary>
+        ///     Get the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("class FormFieldPostInfo {\n");
+            sb.Append("  TemplateId: ").Append(TemplateId).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
-
-    /// <summary>
-    /// Get the JSON string presentation of the object
-    /// </summary>
-    /// <returns>JSON string presentation of the object</returns>
-    public string ToJson() {
-      return JsonConvert.SerializeObject(this, Formatting.Indented);
-    }
-
-}
 }
