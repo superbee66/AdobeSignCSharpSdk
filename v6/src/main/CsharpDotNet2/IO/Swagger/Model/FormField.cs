@@ -66,7 +66,7 @@ namespace IO.Swagger.Model {
     /// <value>Minimum length of the input text field in terms of no. of characters</value>
     [DataMember(Name="minLength", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "minLength")]
-    public ModelInt MinLength { get; set; }
+    public int MinLength { get; set; }
 
     /// <summary>
     /// Origin of Form Field
@@ -322,7 +322,7 @@ namespace IO.Swagger.Model {
     /// <value>Maximum length of the input text field in terms of no. of characters</value>
     [DataMember(Name="maxLength", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "maxLength")]
-    public ModelInt MaxLength { get; set; }
+    public int MaxLength { get; set; }
 
 
     /// <summary>

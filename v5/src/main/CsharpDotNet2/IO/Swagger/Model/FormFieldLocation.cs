@@ -18,7 +18,7 @@ namespace IO.Swagger.Model {
     /// <value>Number of the page where form field has to be placed, starting from 1.</value>
     [DataMember(Name="pageNumber", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "pageNumber")]
-    public ModelInt PageNumber { get; set; }
+    public int PageNumber { get; set; }
 
     /// <summary>
     /// No. of pixels from bottom of the page for form field placement

@@ -18,7 +18,7 @@ namespace IO.Swagger.Model {
     /// <value>Page number within the document.</value>
     [DataMember(Name="pageNumber", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "pageNumber")]
-    public ModelInt PageNumber { get; set; }
+    public int PageNumber { get; set; }
 
     /// <summary>
     /// An image url.

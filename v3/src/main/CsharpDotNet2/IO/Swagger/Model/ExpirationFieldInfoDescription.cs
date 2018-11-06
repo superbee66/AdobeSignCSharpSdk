@@ -18,7 +18,7 @@ namespace IO.Swagger.Model {
     /// <value>Maximum number of days for agreement expiration</value>
     [DataMember(Name="maxDays", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "maxDays")]
-    public ModelInt MaxDays { get; set; }
+    public int MaxDays { get; set; }
 
     /// <summary>
     /// Whether current field is visible or not. If visible attribute for this field is false then this field should not be visible in the agreement creation UI using this workflow to user

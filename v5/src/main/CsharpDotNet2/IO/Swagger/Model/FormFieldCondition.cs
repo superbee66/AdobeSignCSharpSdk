@@ -18,7 +18,7 @@ namespace IO.Swagger.Model {
     /// <value>Index of the location of the whenField whose value is the basis of the condition</value>
     [DataMember(Name="whenFieldLocationIndex", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "whenFieldLocationIndex")]
-    public ModelInt WhenFieldLocationIndex { get; set; }
+    public int WhenFieldLocationIndex { get; set; }
 
     /// <summary>
     /// Value to compare the value of the whenField with, to evaluate the condition

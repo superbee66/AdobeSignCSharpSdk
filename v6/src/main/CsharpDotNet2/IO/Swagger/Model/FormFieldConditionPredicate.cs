@@ -42,7 +42,7 @@ namespace IO.Swagger.Model {
     /// <value>Index of the location of the form field used in the predicate</value>
     [DataMember(Name="fieldLocationIndex", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "fieldLocationIndex")]
-    public ModelInt FieldLocationIndex { get; set; }
+    public int FieldLocationIndex { get; set; }
 
 
     /// <summary>

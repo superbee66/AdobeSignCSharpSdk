@@ -18,7 +18,7 @@ namespace IO.Swagger.Model {
     /// <value>Number of the page in combined document starting from 1.</value>
     [DataMember(Name="pageNumber", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "pageNumber")]
-    public ModelInt PageNumber { get; set; }
+    public int PageNumber { get; set; }
 
     /// <summary>
     /// Rotation angle of the page in clockwise direction in degree

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5158EE54-1A8A-4B13-B636-6D7D9DB145C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdobeSignClient.V4</RootNamespace>
+    <AssemblyName>AdobeSignClient.V4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\RestSharp.105.1.0\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\AgreementsApi.cs" />
+    <Compile Include="Api\BaseUrisApi.cs" />
+    <Compile Include="Api\GroupsApi.cs" />
+    <Compile Include="Api\LibraryDocumentsApi.cs" />
+    <Compile Include="Api\MegaSignsApi.cs" />
+    <Compile Include="Api\RemindersApi.cs" />
+    <Compile Include="Api\SearchApi.cs" />
+    <Compile Include="Api\TransientDocumentsApi.cs" />
+    <Compile Include="Api\UsersApi.cs" />
+    <Compile Include="Api\ViewsApi.cs" />
+    <Compile Include="Api\WidgetsApi.cs" />
+    <Compile Include="Api\WorkflowsApi.cs" />
+    <Compile Include="Client\ApiClient.cs" />
+    <Compile Include="Client\ApiException.cs" />
+    <Compile Include="Client\Configuration.cs" />
+    <Compile Include="Model\AgreementAssetEventGetResponse.cs" />
+    <Compile Include="Model\AgreementAssetEventPostResponse.cs" />
+    <Compile Include="Model\AgreementAssetEventRequest.cs" />
+    <Compile Include="Model\AgreementAssetListRequest.cs" />
+    <Compile Include="Model\AgreementAssetRequest.cs" />
+    <Compile Include="Model\AgreementCreationInfo.cs" />
+    <Compile Include="Model\AgreementCreationResponse.cs" />
+    <Compile Include="Model\AgreementDocuments.cs" />
+    <Compile Include="Model\AgreementInfo.cs" />
+    <Compile Include="Model\AgreementStatusUpdateInfo.cs" />
+    <Compile Include="Model\AgreementStatusUpdateResponse.cs" />
+    <Compile Include="Model\BaseUriInfo.cs" />
+    <Compile Include="Model\CcsInfo.cs" />
+    <Compile Include="Model\CCsListInfoDescription.cs" />
+    <Compile Include="Model\CombinedDocumentPagesInfo.cs" />
+    <Compile Include="Model\CounterSignerInfo.cs" />
+    <Compile Include="Model\CounterSignerSetInfo.cs" />
+    <Compile Include="Model\CustomWorkflowAgreementCreationRequest.cs" />
+    <Compile Include="Model\CustomWorkflowFileInfo.cs" />
+    <Compile Include="Model\DeviceLocation.cs" />
+    <Compile Include="Model\DisplayUserInfo.cs" />
+    <Compile Include="Model\DisplayUserSetInfo.cs" />
+    <Compile Include="Model\Document.cs" />
+    <Compile Include="Model\DocumentCreationInfo.cs" />
+    <Compile Include="Model\DocumentEventForUser.cs" />
+    <Compile Include="Model\DocumentHistoryEvent.cs" />
+    <Compile Include="Model\DocumentImageUrl.cs" />
+    <Compile Include="Model\DocumentImageUrls.cs" />
+    <Compile Include="Model\DocumentLibraryItem.cs" />
+    <Compile Include="Model\DocumentLibraryItems.cs" />
+    <Compile Include="Model\DocumentPageInfo.cs" />
+    <Compile Include="Model\Documents.cs" />
+    <Compile Include="Model\DocumentUrl.cs" />
+    <Compile Include="Model\ExpirationFieldInfoDescription.cs" />
+    <Compile Include="Model\ExternalId.cs" />
+    <Compile Include="Model\FileInfo.cs" />
+    <Compile Include="Model\FileInfosDescription.cs" />
+    <Compile Include="Model\FileUploadOptions.cs" />
+    <Compile Include="Model\FormFieldCondition.cs" />
+    <Compile Include="Model\FormFieldLocation.cs" />
+    <Compile Include="Model\GroupCreationInfo.cs" />
+    <Compile Include="Model\GroupCreationResponse.cs" />
+    <Compile Include="Model\GroupDetailsInfo.cs" />
+    <Compile Include="Model\GroupInfo.cs" />
+    <Compile Include="Model\GroupModificationInfo.cs" />
+    <Compile Include="Model\GroupModificationResponse.cs" />
+    <Compile Include="Model\GroupsInfo.cs" />
+    <Compile Include="Model\ImageUrl.cs" />
+    <Compile Include="Model\InteractiveOptions.cs" />
+    <Compile Include="Model\LibDocEventDeviceLocation.cs" />
+    <Compile Include="Model\LibDocParticipantInfo.cs" />
+    <Compile Include="Model\LibDocumentHistoryEvent.cs" />
+    <Compile Include="Model\LibraryCreationInfo.cs" />
+    <Compile Include="Model\LibraryDocumentCreationInfo.cs" />
+    <Compile Include="Model\LibraryDocumentCreationResponse.cs" />
+    <Compile Include="Model\LibraryDocumentInfo.cs" />
+    <Compile Include="Model\LocaleFieldInfoDescription.cs" />
+    <Compile Include="Model\MegaSign.cs" />
+    <Compile Include="Model\MegaSignChildAgreement.cs" />
+    <Compile Include="Model\MegaSignChildAgreements.cs" />
+    <Compile Include="Model\MegaSignCreationInfo.cs" />
+    <Compile Include="Model\MegaSignCreationRequest.cs" />
+    <Compile Include="Model\MegaSignCreationResponse.cs" />
+    <Compile Include="Model\MegaSignInfo.cs" />
+    <Compile Include="Model\MegaSigns.cs" />
+    <Compile Include="Model\MergefieldInfo.cs" />
+    <Compile Include="Model\MergeFieldInfoDescription.cs" />
+    <Compile Include="Model\NextParticipantInfo.cs" />
+    <Compile Include="Model\NextParticipantSetInfo.cs" />
+    <Compile Include="Model\OriginalDocument.cs" />
+    <Compile Include="Model\ParticipantEmailInfo.cs" />
+    <Compile Include="Model\ParticipantEmailSetInfo.cs" />
+    <Compile Include="Model\ParticipantInfo.cs" />
+    <Compile Include="Model\ParticipantSetInfo.cs" />
+    <Compile Include="Model\PasswordFieldInfoDescription.cs" />
+    <Compile Include="Model\PhoneInfo.cs" />
+    <Compile Include="Model\PostSignOptions.cs" />
+    <Compile Include="Model\RecipientInfo.cs" />
+    <Compile Include="Model\RecipientSecurityOption.cs" />
+    <Compile Include="Model\RecipientSetInfo.cs" />
+    <Compile Include="Model\RecipientsInfo.cs" />
+    <Compile Include="Model\RecipientsListInfoDescription.cs" />
+    <Compile Include="Model\ReminderCreationInfo.cs" />
+    <Compile Include="Model\ReminderCreationResult.cs" />
+    <Compile Include="Model\RequestFormField.cs" />
+    <Compile Include="Model\SecurityOption.cs" />
+    <Compile Include="Model\SendThroughWebOptions.cs" />
+    <Compile Include="Model\SigningUrl.cs" />
+    <Compile Include="Model\SigningUrlResponse.cs" />
+    <Compile Include="Model\SigningUrlSetInfo.cs" />
+    <Compile Include="Model\SupportingDocument.cs" />
+    <Compile Include="Model\TargetViewRequest.cs" />
+    <Compile Include="Model\TransientDocumentResponse.cs" />
+    <Compile Include="Model\URLFileInfo.cs" />
+    <Compile Include="Model\UserAgreement.cs" />
+    <Compile Include="Model\UserAgreements.cs" />
+    <Compile Include="Model\UserCreationInfo.cs" />
+    <Compile Include="Model\UserCreationResponse.cs" />
+    <Compile Include="Model\UserDetailsInfo.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\UserModificationInfo.cs" />
+    <Compile Include="Model\UsersInfo.cs" />
+    <Compile Include="Model\UserWidget.cs" />
+    <Compile Include="Model\UserWidgets.cs" />
+    <Compile Include="Model\UserWorkflow.cs" />
+    <Compile Include="Model\UserWorkflows.cs" />
+    <Compile Include="Model\VaultingInfo.cs" />
+    <Compile Include="Model\ViewUrl.cs" />
+    <Compile Include="Model\WidgetAgreements.cs" />
+    <Compile Include="Model\WidgetCompletionInfo.cs" />
+    <Compile Include="Model\WidgetCreationInfo.cs" />
+    <Compile Include="Model\WidgetCreationRequest.cs" />
+    <Compile Include="Model\WidgetCreationResponse.cs" />
+    <Compile Include="Model\WidgetDocuments.cs" />
+    <Compile Include="Model\WidgetEventDeviceLocation.cs" />
+    <Compile Include="Model\WidgetFileInfo.cs" />
+    <Compile Include="Model\WidgetHistoryEvent.cs" />
+    <Compile Include="Model\WidgetInfo.cs" />
+    <Compile Include="Model\WidgetMergefieldInfo.cs" />
+    <Compile Include="Model\WidgetOriginalDocument.cs" />
+    <Compile Include="Model\WidgetParticipantInfo.cs" />
+    <Compile Include="Model\WidgetParticipantSetInfo.cs" />
+    <Compile Include="Model\WidgetPersonalizationInfo.cs" />
+    <Compile Include="Model\WidgetPersonalizeResponse.cs" />
+    <Compile Include="Model\WidgetSecurityOption.cs" />
+    <Compile Include="Model\WidgetSignerSecurityOption.cs" />
+    <Compile Include="Model\WidgetStatusUpdateInfo.cs" />
+    <Compile Include="Model\WidgetStatusUpdateResponse.cs" />
+    <Compile Include="Model\WidgetURLFileInfo.cs" />
+    <Compile Include="Model\WidgetVaultingInfo.cs" />
+    <Compile Include="Model\WorkflowBasedFormField.cs" />
+    <Compile Include="Model\WorkflowDefaultParams.cs" />
+    <Compile Include="Model\WorkflowDescription.cs" />
+    <Compile Include="Model\WorkflowLibraryDocument.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

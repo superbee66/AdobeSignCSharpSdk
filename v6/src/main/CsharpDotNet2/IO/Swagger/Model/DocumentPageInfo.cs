@@ -34,7 +34,7 @@ namespace IO.Swagger.Model {
     /// <value>Index of the page in combined document starting from 1</value>
     [DataMember(Name="index", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "index")]
-    public ModelInt Index { get; set; }
+    public int Index { get; set; }
 
     /// <summary>
     /// Height of the page

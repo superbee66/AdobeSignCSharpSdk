@@ -26,7 +26,7 @@ namespace IO.Swagger.Model {
     /// <value>Number of pages in the document</value>
     [DataMember(Name="numPages", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "numPages")]
-    public ModelInt NumPages { get; set; }
+    public int NumPages { get; set; }
 
     /// <summary>
     /// The name of the supporting document field

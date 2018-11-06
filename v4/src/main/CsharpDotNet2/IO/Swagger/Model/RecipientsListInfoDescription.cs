@@ -26,7 +26,7 @@ namespace IO.Swagger.Model {
     /// <value>minimum number of entries allowed in the current recipient list</value>
     [DataMember(Name="minListCount", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "minListCount")]
-    public ModelInt MinListCount { get; set; }
+    public int MinListCount { get; set; }
 
     /// <summary>
     /// Whether current field is visible. If visible attribute for this field is false then this field should not be shown in the agreement creation UI using this workflow to user
@@ -82,7 +82,7 @@ namespace IO.Swagger.Model {
     /// <value>maximum number of entries allowed in the current recipient list</value>
     [DataMember(Name="maxListCount", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "maxListCount")]
-    public ModelInt MaxListCount { get; set; }
+    public int MaxListCount { get; set; }
 
     /// <summary>
     /// A display text for the workflow user that can be used for the current recipients list
